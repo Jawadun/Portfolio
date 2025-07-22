@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jawadun Noor - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#" class="logo">Jawadun Noor</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hello, Welcome to my Portfolio</h1>
+            <p>I craft beautiful digital experiences that bring ideas to life</p>
+            <a href="#projects" class="cta-button">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-info">
+                <div class="profile-photo">
+                  <img src="assets/jawad.jpeg" alt="Your Name" id="profileImage" style="display: block;">
+
+                </div>
+                <div class="about-text">
+                    <p>I'm a passionate developer who loves creating innovative solutions and beautiful user experiences. With expertise in modern web technologies, I transform ideas into engaging digital products.</p>
+                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open source projects, or sharing knowledge with the developer community.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Skills Section -->
+    <section class="section" id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-section">
+            <div class="skills-categories">
+                <div class="skills-category">
+                    <h3>Language & Frameworks</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">JavaScript</span>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="--skill-width: 50%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Go</span>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="--skill-width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">C++</span>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="--skill-width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Java</span>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="--skill-width: 58%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Specialized Skills</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">Backend with Go</span>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="--skill-width: 30%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">MERN Stack</span>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="--skill-width: 40%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Database</span>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="--skill-width: 10%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Android with Flutter</span>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="--skill-width: 55%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">Git/GitHub</span>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="--skill-width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Firebase</span>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="--skill-width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Canva</span>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="--skill-width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Figma</span>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="--skill-width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Projects Section -->
+    <section class="section" id="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card" onclick="openProjectModal('project1')">
+                <div class="project-image">
+                    🚀
+                    <div class="project-overlay">
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Dragon-Repeller</h3>
+                    <p>A text based RPG where you play as a hero and save the town by fighting dragon and other beasts</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" onclick="openProjectModal('project2')">
+                <div class="project-image">
+                    💡
+                    <div class="project-overlay">
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Sust_Medical</h3>
+                    <p>An android app for the students of SUST that automates the services given by the medical center of SUST</p>
+                    <div class="project-tags">
+                        <span class="tag">Flutter</span>
+                        <span class="tag">Dart</span>
+                        <span class="tag">Firebase</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" onclick="openProjectModal('project3')">
+                <div class="project-image">
+                    🎨
+                    <div class="project-overlay">
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Pacman</h3>
+                    <p>Clone of one of the most populer arcade game in the world-Pacman</p>
+                    <div class="project-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">Swing-Java</span>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Achievements Section -->
+    <section class="section" id="achievements">
+        <h2>Achievements & Milestones</h2>
+        <div class="achievements-grid">
+            <div class="achievement-card">
+                <div class="achievement-icon">🏆</div>
+                <h3>Hult Prize at SUST</h3>
+                <div class="achievement-date">December 2024</div>
+                <p class="achievement-description">Became "1st Runners Up" at Hult Prize at SUST</p>
+            </div>
+
+            <div class="achievement-card">
+                <div class="achievement-icon">🎓</div>
+                <h3>Mastermind 2024</h3>
+                <div class="achievement-date">September 2024</div>
+                <p class="achievement-description">Placed 4th in Mastermind 2024, a national case competition</p>
+            </div>
+
+           
+        </div>
+    </section>
+
+   
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-content">
+            <p>Have a project in mind? Let's collaborate and create something amazing together.</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="contact-icon">📧</span>
+                    <div>
+                        <h4>Email</h4>
+                        <p>jawadunnoor@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📱</span>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>01648956855</p>
+                    </div>
+                </div>
+         
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Jawadun Noor. All rights reserved.</p>
+    </footer>
+
+    <!-- Project Detail Modals -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Project Details</h2>
+                <button class="close-btn" onclick="closeProjectModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Project details will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
