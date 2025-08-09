@@ -1,7 +1,7 @@
 const projects = {
             project1: {
                 title: "Project Alpha",
-                icon: "🚀",
+                icon: '<img src="assets/logos/dragon.png" alt="Dragon" class="skill-logo">',
                 description: "A revolutionary web application that streamlines workflow processes with an intuitive interface and powerful features. This comprehensive solution helps teams collaborate more effectively and manage their tasks with unprecedented efficiency.",
                 fullDescription: "Project Alpha represents a paradigm shift in how teams approach workflow management. Built with modern technologies and user-centric design principles, it offers a seamless experience that adapts to any team size or industry. The application features real-time collaboration tools, advanced analytics, and intelligent automation that learns from user behavior to optimize workflows continuously.",
                 technologies: ["React", "Node.js", "MongoDB", "Socket.io", "Redis"],
@@ -23,11 +23,13 @@ const projects = {
                     "50,000+ active users",
                     "99.9% uptime achieved",
                     "Featured in TechCrunch"
-                ]
+                ],
+                liveDemo: "https://jawadun.github.io/Dragon_repeller/",
+                sourceCode: "https://github.com/Jawadun/Dragon_repeller"
             },
             project2: {
                 title: "Innovation Hub",
-                icon: "💡",
+                icon: '<img src="assets/logos/sust.png" alt="Sust_Medical" class="skill-logo">',
                 description: "A collaborative platform that connects creators and innovators, fostering creativity and entrepreneurship across various industries and disciplines.",
                 fullDescription: "Innovation Hub serves as a digital ecosystem where creative minds converge to share ideas, collaborate on projects, and turn concepts into reality. The platform facilitates meaningful connections between entrepreneurs, designers, developers, and investors, creating a vibrant community focused on innovation.",
                 technologies: ["Vue.js", "Firebase", "TypeScript", "Stripe API", "WebRTC"],
@@ -49,11 +51,13 @@ const projects = {
                     "500+ successful projects launched",
                     "$2M+ in funding facilitated",
                     "Partnerships with 50+ accelerators"
-                ]
+                ],
+                liveDemo: "https://your-dragon-repeller-demo-link.com",
+                sourceCode: "https://github.com/Jawadun/Sust_medical"
             },
             project3: {
                 title: "Design Studio",
-                icon: "🎨",
+                icon: '<img src="assets/logos/pacman.png" alt="Pacman" class="skill-logo">',
                 description: "A creative tool suite that empowers designers to create stunning visuals with AI-powered assistance, revolutionizing the design workflow.",
                 fullDescription: "Design Studio combines the power of artificial intelligence with intuitive design tools to create a new standard for digital creativity. The platform offers smart suggestions, automated processes, and collaborative features that enhance designer productivity while maintaining creative control.",
                 technologies: ["Python", "TensorFlow", "React", "Canvas API", "WebGL"],
@@ -75,7 +79,9 @@ const projects = {
                     "60% faster design process",
                     "1M+ designs created",
                     "Integration with major design tools"
-                ]
+                ],
+                 liveDemo: "https://your-dragon-repeller-demo-link.com",
+                sourceCode: "https://github.com/Jawadun/Pacman"
             }
         };
 
@@ -109,6 +115,67 @@ const projects = {
                 });
             });
         }
+
+        function initContactCopy() {
+            document.querySelectorAll('.contact-item').forEach(item => {
+                item.addEventListener('click', function() {
+                    const text = this.querySelector('h4').textContent;
+                    navigator.clipboard.writeText(text).then(() => {
+                        // Show a temporary success message
+                        const originalText = this.querySelector('h4').textContent;
+                        this.querySelector('h4').textContent = 'Copied!';
+                        this.querySelector('h4').style.color = '#64ffda';
+                        
+                        setTimeout(() => {
+                            this.querySelector('h4').textContent = originalText;
+                            this.querySelector('h4').style.color = '';
+                        }, 1000);
+                    });
+                });
+            });
+        }
+
+          function downloadCV() {
+            
+            
+             const link = document.createElement('a');
+             link.href = 'assets/Jawadun_Noor.pdf';
+             link.download = 'Jawadun_Noor.pdf';
+             link.click();
+        }
+
+        function viewCV() {
+            window.open('assets/Jawadun_Noor.pdf', '_blank');
+            
+        }
+        document.addEventListener('mousemove', function(e) {
+            const particles = document.querySelectorAll('.particle');
+            const mouseX = e.clientX;
+            const mouseY = e.clientY;
+            
+            particles.forEach((particle, index) => {
+                if (index % 3 === 0) {
+                    const rect = particle.getBoundingClientRect();
+                    const particleX = rect.left + rect.width / 2;
+                    const particleY = rect.top + rect.height / 2;
+                    
+                    const distance = Math.sqrt(
+                        Math.pow(mouseX - particleX, 2) + Math.pow(mouseY - particleY, 2)
+                    );
+                    
+                    if (distance < 100) {
+                        particle.style.opacity = '0.8';
+                        particle.style.transform = `scale(1.5)`;
+                        particle.style.background = 'rgba(100, 255, 218, 0.8)';
+                    } else {
+                        particle.style.opacity = '0.3';
+                        particle.style.transform = `scale(1)`;
+                        particle.style.background = 'rgba(100, 255, 218, 0.3)';
+                    }
+                }
+            });
+        });
+
 
         // Form submission handler
         // function initContactForm() {
@@ -250,8 +317,8 @@ const projects = {
                 </div>
                 
                 <div class="project-links">
-                    <a href="#" class="project-link">View Live Demo</a>
-                    <a href="#" class="project-link">View Source Code</a>
+                    <a href="${project.liveDemo}" target="_blank" class="project-link">View Live Demo</a>
+                    <a href="${project.sourceCode}" target="_blank" class="project-link">View Source Code</a>
                 </div>
             `;
             
@@ -324,7 +391,8 @@ const projects = {
         document.addEventListener('DOMContentLoaded', function() {
             createParticles();
             initSmoothScrolling();
-            initContactForm();
+            //initContactForm();
+            initContactCopy()
             initHeaderScrollEffect();
             initScrollAnimations();
             initTypingEffect();
