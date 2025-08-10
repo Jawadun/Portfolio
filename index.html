@@ -7,15 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Animated particles -->
     <div class="particles" id="particles"></div>
 
-    <!-- Header -->
     <header>
         <nav>
             <a href="#" class="logo">Jawadun Noor</a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
+                 <li><a href="#cv">CV</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#achievements">Achievements</a></li>
@@ -24,7 +23,6 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <h1>Hello, Welcome to my Portfolio</h1>
@@ -33,7 +31,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section class="section" id="about">
         <h2>About Me</h2>
         <div class="about-content">
@@ -50,7 +47,25 @@
         </div>
     </section>
 
-    <!-- Enhanced Skills Section -->
+    <section class="section" id="cv">
+        <h2>Curriculum Vitae</h2>
+        <div class="cv-section">
+            <span class="cv-icon">📄</span>
+            <h3>Download My Resume</h3>
+            <p>Get a comprehensive overview of my professional experience, education, skills, and achievements. Available in PDF format for easy viewing and sharing.</p>
+            <div class="cv-buttons">
+                <a href="#" class="cv-btn primary" onclick="downloadCV()">
+                    <span>⬇️</span>
+                    Download CV
+                </a>
+                <a href="#" class="cv-btn secondary" onclick="viewCV()">
+                    <span>👁️</span>
+                    View Online
+                </a>
+            </div>
+        </div>
+    </section>
+
     <section class="section" id="skills">
         <h2>Technical Skills</h2>
         <div class="skills-section">
@@ -150,13 +165,12 @@
         </div>
     </section>
 
-     <!-- Projects Section -->
     <section class="section" id="projects">
         <h2>Featured Projects</h2>
         <div class="projects-grid">
             <div class="project-card" onclick="openProjectModal('project1')">
                 <div class="project-image">
-                    <img src="assets/logos/dragon.png" alt="Dragon-Repeller" class="skill-logo">
+                    <img src="assets/logos/dragon.png" alt="Dragon-Repeller" class="project-logo">
                     <div class="project-overlay">
                         <button class="view-details-btn">View Details</button>
                     </div>
@@ -173,7 +187,7 @@
             </div>
             <div class="project-card" onclick="openProjectModal('project2')">
                 <div class="project-image">
-                    <img src="assets/logos/sust.png" alt="Sust_Medical" class="skill-logo">
+                    <img src="assets/logos/sust.png" alt="Sust_Medical" class="project-logo">
                     <div class="project-overlay">
                         <button class="view-details-btn">View Details</button>
                     </div>
@@ -190,7 +204,7 @@
             </div>
             <div class="project-card" onclick="openProjectModal('project3')">
                 <div class="project-image">
-                    <img src="assets/logos/pacman.png" alt="Pacman" class="skill-logo">
+                    <img src="assets/logos/pacman.png" alt="Pacman" class="project-logo">
                     <div class="project-overlay">
                         <button class="view-details-btn">View Details</button>
                     </div>
@@ -205,11 +219,25 @@
                     </div>
                 </div>
             </div>
+            <div class="project-card" onclick="openProjectModal('project4')">
+                <div class="project-image">
+                    <img src="assets/logos/ecom.png" alt="Pacman" class="project-logo">
+                    <div class="project-overlay">
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>E-commerce Backend</h3>
+                    <p>A HTTP server made using Go and RESTfull api</p>
+                    <div class="project-tags">
+                        <span class="tag">Go</span>
+                        
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-
-    <!-- Achievements Section -->
     <section class="section" id="achievements">
         <h2>Achievements & Milestones</h2>
         <div class="achievements-grid">
@@ -225,78 +253,52 @@
                 <h3>Mastermind 2024</h3>
                 <div class="achievement-date">September 2024</div>
                 <p class="achievement-description">Placed 4th in Mastermind 2024, a national case competition</p>
-            </div>
-
-           
+            </div>           
         </div>
-    </section>
-    <section class="section" >
-                <div class="cv-content" id="cv">
-                    <div class="cv-icon floating">📄</div>
-                    <h3 class="card-title">Resume</h3>
-                    <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 1.5rem;">Download my latest CV to learn more about my experience and skills</p>
-                    <div class="cv-buttons">
-                        <a href="#" class="cv-btn primary" onclick="downloadCV()">
-                            <span>📥</span>
-                            Download CV
-                        </a>
-                        <a href="#" class="cv-btn secondary" onclick="viewCV()">
-                            <span>👁️</span>
-                            View Online
-                        </a>
-                    </div>
-                </div>
-            </section>
    
-    <!-- Contact Section -->
     <section class="section" id="contact">
         <h2>Get In Touch</h2>
         <div class="contact-content">
             <p>Have a project in mind? Let's collaborate and create something amazing together.</p>
             <div class="contact-info">
                  <div class="contact-item">
-                        <span class="contact-icon"><img src="assets/logos/gmail.png" alt="gmail" class="skill-logo"></span>
+                        <span class="contact-icon"><img src="assets/logos/gmail.png" alt="gmail" class="contact-logo"></span>
                         <div class="contact-info">
                             <h4>jawadunnoor@gmail.com</h4>
                             
                         </div>
                     </div>
                     <div class="contact-item">
-                        <span class="contact-icon"><img src="assets/logos/phone.png" alt="Phone" class="skill-logo"></span>
+                        <span class="contact-icon"><img src="assets/logos/phone.png" alt="Phone" class="contact-logo"></span>
                         <div class="contact-info">
                             <h4>01648956855</h4>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <span class="contact-icon"><img src="assets/logos/facebook.png" alt="Facebook" class="skill-logo"></span>
+                        <span class="contact-icon"><img src="assets/logos/facebook.png" alt="Facebook" class="contact-logo"></span>
                         <div class="contact-info">
-                            <h4><a href="https://www.facebook.com/jawadn.jeem.94" target="_blank">Jawadun Noor</a></h4>
-                            
+                            <h4><a href="https://www.facebook.com/jawadn.jeem.94" target="_blank">Jawadun Noor</a></h4>                            
                         </div>
                     </div>
                     <div class="contact-item">
-                        <span class="contact-icon"><img src="assets/logos/git.png" alt="Github" class="skill-logo"></span>
+                        <span class="contact-icon"><img src="assets/logos/git.png" alt="Github" class="contact-logo"></span>
                         <div class="contact-info">
                             <h4><a href="https://github.com/Jawadun" target="_blank">Jawadun</a></h4>
                             
                         </div>
                     </div>
                     <div class="contact-item">
-                        <span class="contact-icon"><img src="assets/logos/linkedin.png" alt="LinkedIn" class="skill-logo"></span>
+                        <span class="contact-icon"><img src="assets/logos/linkedin.png" alt="LinkedIn" class="contact-logo"></span>
                         <div class="contact-info">
                             <h4><a href="https://www.linkedin.com/in/jawadun-noor-769a77365/" target="_blank">Jawadun Noor</a></h4>
                             
                         </div>
-                    
-         
     </section>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Jawadun Noor. All rights reserved.</p>
     </footer>
 
-    <!-- Project Detail Modals -->
     <div id="projectModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -304,7 +306,6 @@
                 <button class="close-btn" onclick="closeProjectModal()">&times;</button>
             </div>
             <div class="modal-body" id="modalBody">
-                <!-- Project details will be inserted here -->
             </div>
         </div>
     </div>

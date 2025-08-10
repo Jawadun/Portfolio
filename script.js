@@ -1,91 +1,100 @@
 const projects = {
             project1: {
-                title: "Project Alpha",
-                icon: '<img src="assets/logos/dragon.png" alt="Dragon" class="skill-logo">',
-                description: "A revolutionary web application that streamlines workflow processes with an intuitive interface and powerful features. This comprehensive solution helps teams collaborate more effectively and manage their tasks with unprecedented efficiency.",
-                fullDescription: "Project Alpha represents a paradigm shift in how teams approach workflow management. Built with modern technologies and user-centric design principles, it offers a seamless experience that adapts to any team size or industry. The application features real-time collaboration tools, advanced analytics, and intelligent automation that learns from user behavior to optimize workflows continuously.",
-                technologies: ["React", "Node.js", "MongoDB", "Socket.io", "Redis"],
+                title: "Dragon Repeller",
+                icon: '<img src="assets/logos/dragon.png" alt="Dragon" class="project-logo">',
+                description: "A text based RPG game where players embark on a quest to defeat dragons and save the kingdom. The game features an immersive storyline, character customization, and strategic combat mechanics.",
+                fullDescription: "Dragon Repeller is a thrilling text-based RPG that combines storytelling with strategic gameplay. Players create their own characters, explore a richly detailed world, and engage in turn-based battles against formidable dragon foes. The game emphasizes player choice, allowing for multiple paths and outcomes based on decisions made throughout the adventure.",
+                technologies: ["HTML", "CSS", "JavaScript"],
                 features: [
-                    "Real-time collaboration",
-                    "Advanced analytics dashboard",
-                    "Intelligent task automation",
-                    "Multi-team support",
-                    "Custom workflow builder"
+                    "Turn-based combat system",
+                    "Inventory management",
+                    "Interactive world exploration",
+                    "Achievements and leaderboards"
                 ],
                 challenges: [
-                    "Scalable real-time architecture",
-                    "Complex permission system",
+                    "Balancing game mechanics",
+                    "Storyline development",
                     "Performance optimization",
-                    "Cross-platform compatibility"
+                    "User interface design",
                 ],
                 results: [
-                    "40% increase in team productivity",
-                    "50,000+ active users",
-                    "99.9% uptime achieved",
-                    "Featured in TechCrunch"
+                    "Implemented feedback for continuous improvement",
+            
+                    "Expanded storyline with additional quests"
                 ],
                 liveDemo: "https://jawadun.github.io/Dragon_repeller/",
                 sourceCode: "https://github.com/Jawadun/Dragon_repeller"
             },
             project2: {
-                title: "Innovation Hub",
-                icon: '<img src="assets/logos/sust.png" alt="Sust_Medical" class="skill-logo">',
-                description: "A collaborative platform that connects creators and innovators, fostering creativity and entrepreneurship across various industries and disciplines.",
-                fullDescription: "Innovation Hub serves as a digital ecosystem where creative minds converge to share ideas, collaborate on projects, and turn concepts into reality. The platform facilitates meaningful connections between entrepreneurs, designers, developers, and investors, creating a vibrant community focused on innovation.",
-                technologies: ["Vue.js", "Firebase", "TypeScript", "Stripe API", "WebRTC"],
+                title: "Sust Medical",
+                icon: '<img src="assets/logos/sust.png" alt="Sust_Medical" class="project-logo">',
+                description: "Sust Medical is a platform designed to connect medical students and professionals, facilitating knowledge sharing, collaboration on research projects, and access to resources. The platform aims to enhance the educational experience for medical students and foster innovation in healthcare.",
+                fullDescription: "Sust Medical is a comprehensive platform that bridges the gap between medical students and professionals. It provides a space for sharing ideas, collaborating on research, and accessing valuable resources. The platform includes features like virtual coworking spaces, project funding tools, and mentorship programs to support innovation in healthcare.",
+                technologies: ["Flutter", "Firebase", "Dart"],
                 features: [
-                    "Idea sharing and collaboration",
-                    "Investor matching system",
+                    "Collaborative platform for students and medical stuffs",
                     "Virtual coworking spaces",
-                    "Project funding tools",
-                    "Mentorship programs"
+                    "Project funding tools"
+                    
                 ],
                 challenges: [
-                    "Building trust in virtual environment",
-                    "Intellectual property protection",
+                    "Using android development environment",
                     "Scalable video conferencing",
                     "Payment processing security"
                 ],
                 results: [
-                    "10,000+ registered innovators",
-                    "500+ successful projects launched",
-                    "$2M+ in funding facilitated",
-                    "Partnerships with 50+ accelerators"
+                    "A nice cool app"
                 ],
-                liveDemo: "https://your-dragon-repeller-demo-link.com",
+                liveDemo: "https://jawadun.github.io/Dragon_repeller/",
                 sourceCode: "https://github.com/Jawadun/Sust_medical"
             },
             project3: {
-                title: "Design Studio",
-                icon: '<img src="assets/logos/pacman.png" alt="Pacman" class="skill-logo">',
-                description: "A creative tool suite that empowers designers to create stunning visuals with AI-powered assistance, revolutionizing the design workflow.",
-                fullDescription: "Design Studio combines the power of artificial intelligence with intuitive design tools to create a new standard for digital creativity. The platform offers smart suggestions, automated processes, and collaborative features that enhance designer productivity while maintaining creative control.",
-                technologies: ["Python", "TensorFlow", "React", "Canvas API", "WebGL"],
+                title: "Pacman",
+                icon: '<img src="assets/logos/pacman.png" alt="Pacman" class="project-logo">',
+                description: "Clone of one of the most populer arcade game in the world-Pacman",
+                fullDescription: "Clone of one of the most populer arcade game in the world-Pacman using Java swing as a part of Object oriented programming lab ",
+                technologies: ["Java", "Java Swing"],
                 features: [
-                    "AI-powered design suggestions",
-                    "Automated color palette generation",
-                    "Smart layout optimization",
-                    "Real-time collaboration",
-                    "Version control system"
+                    "Smooth gameplay",
+                    "Adjustable player and enemy speed",
+                    "Lightwaight"
                 ],
                 challenges: [
-                    "Training custom AI models",
-                    "Real-time rendering performance",
-                    "Complex canvas operations",
-                    "Cross-browser compatibility"
+                    "Use of Object oriented Programming"
+                    
                 ],
                 results: [
-                    "25,000+ designers onboarded",
-                    "60% faster design process",
-                    "1M+ designs created",
-                    "Integration with major design tools"
+                    "Learning OOP",
+                    "Great game"
+                    
                 ],
-                 liveDemo: "https://your-dragon-repeller-demo-link.com",
+                 liveDemo: "https://jawadun.github.io/Dragon_repeller/",
                 sourceCode: "https://github.com/Jawadun/Pacman"
+            },
+            project4: {
+                title: "E-commerce Backend",
+                icon: '<img src="assets/logos/ecom.png" alt="Pacman" class="project-logo">',
+                description: "A backend application made for any E commerce platform",
+                fullDescription: "A HTTP server made with Go and REST Api from where you can feach and create Json data for an e commerce platform ",
+                technologies: ["Go"],
+                features: [
+                    "REST Api",
+                    "First and efficient",
+                    "Concurrency"
+                ],
+                challenges: [
+                    "Fundumentals of HTTP, RESTfull api and networking"
+                    
+                ],
+                results: [
+                    "Learning Go",
+                    
+                ],
+                 liveDemo: "https://jawadun.github.io/Dragon_repeller/",
+                sourceCode: "https://github.com/Jawadun/E-commerce_backend"
             }
         };
 
-        // Create floating particles
         function createParticles() {
             const particlesContainer = document.getElementById('particles');
             const particleCount = 50;
@@ -100,7 +109,6 @@ const projects = {
             }
         }
 
-        // Smooth scrolling for navigation links
         function initSmoothScrolling() {
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
@@ -205,7 +213,6 @@ const projects = {
         //     });
         // }
 
-        // Header scroll effect
         function initHeaderScrollEffect() {
             window.addEventListener('scroll', function() {
                 const header = document.querySelector('header');
@@ -217,7 +224,6 @@ const projects = {
             });
         }
 
-        // Scroll animations
         function initScrollAnimations() {
             const observerOptions = {
                 threshold: 0.1,
@@ -229,7 +235,6 @@ const projects = {
                     if (entry.isIntersecting) {
                         entry.target.style.animation = 'slideUp 1s ease-out';
                         
-                        // Animate skill progress bars
                         if (entry.target.id === 'skills') {
                             animateSkillBars();
                         }
@@ -242,7 +247,6 @@ const projects = {
             });
         }
 
-        // Animate skill progress bars
         function animateSkillBars() {
             const skillBars = document.querySelectorAll('.skill-progress');
             skillBars.forEach((bar, index) => {
@@ -254,7 +258,6 @@ const projects = {
             });
         }
 
-        // Typing effect for hero title
         function initTypingEffect() {
             const heroTitle = document.querySelector('.hero h1');
             const text = heroTitle.textContent;
@@ -272,7 +275,6 @@ const projects = {
             setTimeout(typeWriter, 500);
         }
 
-        // Project modal functions
         function openProjectModal(projectId) {
             const modal = document.getElementById('projectModal');
             const project = projects[projectId];
@@ -317,7 +319,6 @@ const projects = {
                 </div>
                 
                 <div class="project-links">
-                    <a href="${project.liveDemo}" target="_blank" class="project-link">View Live Demo</a>
                     <a href="${project.sourceCode}" target="_blank" class="project-link">View Source Code</a>
                 </div>
             `;
@@ -332,7 +333,6 @@ const projects = {
             document.body.style.overflow = 'auto';
         }
 
-        // Close modal when clicking outside
         window.addEventListener('click', function(event) {
             const modal = document.getElementById('projectModal');
             if (event.target === modal) {
@@ -340,7 +340,6 @@ const projects = {
             }
         });
 
-        // Initialize photo functionality
         function initPhotoFeature() {
             const profileImage = document.getElementById('.profileImage');
             const placeholder = document.querySelector('.photo-placeholder');
@@ -360,7 +359,6 @@ const projects = {
             });
         }
 
-        // Mouse interaction with particles
         document.addEventListener('mousemove', function(e) {
             const particles = document.querySelectorAll('.particle');
             const mouseX = e.clientX;
@@ -387,7 +385,6 @@ const projects = {
             });
         });
 
-        // Initialize all functionality when DOM is loaded
         document.addEventListener('DOMContentLoaded', function() {
             createParticles();
             initSmoothScrolling();
